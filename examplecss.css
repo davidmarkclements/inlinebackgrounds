@@ -1,0 +1,27 @@
+/* 
+
+  customize to whatever block level elements you need to apply this to, 
+  using whatever selectors are appropriate to you
+
+*/
+
+p {
+  /* this will later be removed, but provides fallback for non-supporting browsers */
+  background: red; 
+
+}
+
+p span {
+  background: red;
+  display: inline;
+
+  /* units as em for more responsive padding */
+  -webkit-box-shadow:.25em 0 0 0 red,-.25em 0 0 0 red; 
+  box-shadow: .25em 0 0 0 red,-.25em 0 0 0 red;
+
+  /* not required but gives nice spacing effect */
+  line-height: 1.425em;
+
+  position: relative;
+  left: .25em;
+}
